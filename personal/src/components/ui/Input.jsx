@@ -1,0 +1,12 @@
+export default function Input({ label, holder, type = 'text', name, value, change, blur, clickIcon, icon }) {
+  return (
+    <div className="grid gap-1">
+      <label htmlFor={name} className="font-medium">{label}</label>
+      <div className="bg-white text-[#2E462E] rounded-lg flex justify-between items-center ring-1 ring-gray-300 w-full">
+        <input type={type} placeholder={holder} id={name} name={name} value={value} onChange={change} className="w-full outline-0 px-4 py-2 rounded-lg" onBlur={blur} />
+        {icon &&
+          <div onClick={clickIcon} className="px-4 cursor-pointer">{icon}</div>}
+      </div>
+    </div>
+  )
+}
