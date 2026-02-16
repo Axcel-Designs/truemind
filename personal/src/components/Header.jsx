@@ -42,7 +42,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-4">
             <>
               <Link
-                to="/signin"
+                to="/onboarding"
                 className="px-6 py-2.5 bg-[#ff7a18] font-medium rounded-xl text-white  transition-all duration-300 hover:border-emerald-300 hover:shadow-md"
               >
                 Login
@@ -101,7 +101,7 @@ export default function Header() {
             <div className="flex flex-col space-y-3 pt-4 border-t border-emerald-100">
               <>
                 <Link
-                  to="/signin"
+                  to="/onboarding"
                   onClick={() => setIsMenuOpen(false)}
                   className="w-full py-3 text-emerald-700 font-medium rounded-xl bg-white border border-emerald-200 text-center hover:bg-emerald-50 transition-all duration-300"
                 >

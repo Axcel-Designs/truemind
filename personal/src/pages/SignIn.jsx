@@ -5,9 +5,7 @@ export default function SignIn() {
   return (
     <main className="grid lg:grid-cols-2">
       <section
-        className="max-lg:hidden bg-cover bg-no-repeat min-h-screen"
-        style={{ backgroundImage: `url(${img})` }}
-      >
+        className="max-lg:hidden bg-cover bg-no-repeat min-h-screen" style={{ backgroundImage: `url(${img})` }} >
         <div className="flex justify-around items-center h-full w-full bg-[#FF7A18]/80">
           <div className="text-center text-white w-8/12 space-y-5">
             <h1 className="font-semibold text-3xl">Chuks Kitchen</h1>
@@ -18,8 +16,8 @@ export default function SignIn() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col justify-center items-center bg-[#f3f4f6] min-h-screen">
-        <h1 className="text-[#FF7A18] text-3xl island-moments-regular">
+      <section className="flex flex-col justify-center items-center bg-[#f3f4f6] min-h-screen p-4 w-full">
+        <h1 className="text-[#FF7A18] text-3xl island-moments-regular text-center">
           Chuks Kitchen
         </h1>
         <SigninForm />

@@ -1,6 +1,11 @@
 
 export default function Home() {
   return (
-    <div>Home ll</div>
+    <main>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
   )
 }

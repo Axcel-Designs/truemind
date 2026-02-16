@@ -20,13 +20,15 @@ export function ButtonGreen({ label, type = "button", disabled }) {
     </button>
   );
 }
-export function ButtonWhite({ label, type = "button", disabled }) {
+
+export function ButtonWhite({ label, type = "button", disabled, icon }) {
   return (
     <button
       type={type}
       disabled={disabled}
-      className="text-[#446A2E] bg-white py-2 sm:py-3 px-4 sm:px-6 rounded-lg sm:rounded-md text-sm sm:text-base font-medium hover:bg-gray-50 transition-colors"
+      className="gap-4 bg-white border-blue-500 border flex justify-center items-center text-blue-500 py-1 sm:py-2 px-4 sm:px-6 rounded-lg sm:rounded-md w-full text-sm sm:text-base font-medium hover:bg-white/10 transition-colors"
     >
+      {icon}
       {label}
     </button>
   );

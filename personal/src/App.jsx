@@ -29,7 +29,9 @@ function App() {
         </Routes>
       </div>
       <GotoTop />
-      <Footer />
+      <div className="max-md:hidden">
+        <Footer />
+      </div>
     </div>
   );
 }
