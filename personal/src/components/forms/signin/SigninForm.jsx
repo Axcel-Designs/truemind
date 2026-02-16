@@ -21,7 +21,7 @@ export default function SigninForm() {
 
   return (
     <div>
-      <div className="text-center"> Login your Account</div>
+      <div className="text-center font-medium text-2xl mb-4"> Login your Account</div>
       <form className="space-y-4">
         <Input
           label={"Email or phone number"}

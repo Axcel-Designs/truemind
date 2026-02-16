@@ -19,7 +19,7 @@ export default function SignIn() {
         </div>
       </section>
       <section className="flex flex-col justify-center items-center bg-[#f3f4f6] min-h-screen">
-        <h1 className="text-[#FF7A18] text-4xl island-moments-regular">
+        <h1 className="text-[#FF7A18] text-3xl island-moments-regular">
           Chuks Kitchen
         </h1>
         <SigninForm />
