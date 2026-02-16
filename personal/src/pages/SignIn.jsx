@@ -1,4 +1,5 @@
 import img from "../assets/Rectangle 1.png";
+import SigninForm from "../components/forms/signin/SigninForm";
 
 export default function SignIn() {
   return (
@@ -17,10 +18,11 @@ export default function SignIn() {
           </div>
         </div>
       </section>
-      <section className="flex justify-around items-center bg-[#f3f4f6]">
+      <section className="flex flex-col justify-center items-center bg-[#f3f4f6] min-h-screen">
         <h1 className="text-[#FF7A18] text-4xl island-moments-regular">
           Chuks Kitchen
         </h1>
+        <SigninForm />
       </section>
     </main>
   );

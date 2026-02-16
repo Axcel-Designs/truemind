@@ -7,7 +7,7 @@ import Menu from "./pages/Menu";
 import Onboarding from "./pages/Onboarding";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
-import GotoTop from "./components/GotoTop";
+import GotoTop from "./components/ui/GotoTop";
 
 function App() {
   const location = useLocation();
