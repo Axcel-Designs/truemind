@@ -407,5 +407,6 @@ npm run lint
 ---
 
 **Last Updated**: February 17, 2026  
-**Maintained By**: Development Team  
 **Next Review**: When major feature additions are made
+
+[Live Demo](https://truemind-seven.vercel.app/)

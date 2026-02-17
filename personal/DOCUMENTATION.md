@@ -399,4 +399,4 @@ npm run lint
 **Maintained By**: Development Team  
 **Next Review**: When major feature additions are made
 
-[Live Demo](https://truemind-seven.vercel.app/)
+
