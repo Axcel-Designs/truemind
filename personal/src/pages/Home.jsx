@@ -4,7 +4,7 @@ import { chefSpecial, popularCategories } from "../utils/data";
 
 export default function Home() {
   return (
-    <main className="relativee h-full w-full">
+    <main className="relativee h-full w-full bg-[#f3f4f6]">
       {/* banner */}
       <section style={{ backgroundImage: `url(${welcImg})` }} className="h-[90vh] w-full bg-cover bg-no-repeat">
         <div className="bg-black/50 min-h-full w-full flex items-center text-white p-4">

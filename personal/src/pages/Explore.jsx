@@ -2,10 +2,11 @@ import { FaPlusCircle } from "react-icons/fa";
 import { exploreImg } from "../assets/imgLists";
 import ButtonBrown from "../components/ui/Button";
 import { chefSpecial, popularCategories } from "../utils/data";
+import { exploreData } from "../utils/exploreData";
 
 export default function Explore() {
   return (
-    <main className="relativee h-full w-full">
+    <main className="relativee h-full w-full bg-[#f3f4f6]">
       {/* banner */}
       <section style={{ backgroundImage: `url(${exploreImg})` }} className="h-[90vh] w-full bg-cover bg-no-repeat">
         <div className="bg-black/50 min-h-full w-full flex items-center text-white p-4">
@@ -16,9 +17,19 @@ export default function Explore() {
         </div>
       </section>
 
+      {/* Menu */}
+      <section className="p-4 bg-white">
+        <h1 className="font-semibold ">Menu Categories</h1>
+        <select name="" id="" className="outline-0 w-full">
+          {exploreData.map((item, i) => (
+            <option key={i} value={item}>{item}</option>
+          ))}
+        </select>
+      </section>
+
       {/* Popular Categories */}
-      <section className="my-30">
-        <h1 className="font-semibold text-2xl  my-8">Popular </h1>
+      <section className="my-30 p-4">
+        <h1 className="font-semibold text-2xl my-8">Popular </h1>
         <div className="flex flex-wrap items-center gap-y-10 w-full">
           {popularCategories.map((item, i) => (
             <div key={i} className="flex flex-col gap-2 items-center #max-w-5/12 mx-auto shadow-xl rounded-xl w-fit">
@@ -30,7 +41,7 @@ export default function Explore() {
       </section>
 
       {/* Chef Special */}
-      <section className="my-30">
+      <section className="my-30 p-4">
         <h1 className="font-semibold text-2xl my-8">Chef's Special</h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 items-center gap-10 w-full">
           {chefSpecial.map((item, i) => (
@@ -41,7 +52,7 @@ export default function Explore() {
                 <div className="">{item.desc}</div>
                 <div className="flex justify-between items-center w-full">
                   <div className="text-[#ff7a18] font-semibold text-lg">N{item.price}</div>
-                  <div className="w-fit text-[#ff7a18] text-xl">
+                  <div className="w-fit text-[#ff7a18] text-2xl">
                     <FaPlusCircle />
                   </div>
                 </div>
