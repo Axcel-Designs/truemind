@@ -6,8 +6,7 @@
 
 The platform serves as a bridge between the restaurant and its customers, offering a seamless experience for discovering and ordering traditional Nigerian dishes such as Jollof Rice, Pepper Soups, Swallow & Soups, Grills & BBQ, and more.
 
-### Key Features
-
+### Key Features:
 - **Home Page**: Hero banner, popular categories showcase, and chef's special recommendations
 - **Explore Page**: Browse detailed menu with category filters and popular items
 - **Authentication System**: Sign Up and Sign In pages with form validation
@@ -118,14 +117,12 @@ personal/
 The design has been translated from Figma wireframes into a fully functional React application with the following interpretations:
 
 #### Color Scheme
-
 - **Primary Color**: `#FF7A18` (Orange) - Used for CTAs, buttons, and brand identity
 - **Secondary Colors**: Emerald (`#10B981`) and green tones for natural feel
 - **Neutral**: `#f3f4f6` (Light Gray) for backgrounds, `#000000` for text overlay
 - **Accent**: White backgrounds for content sections with subtle shadows
 
 #### Layout & Spacing
-
 - **Hero Sections**: Full-height background images with semi-transparent overlay and white text
 - **Grid System**: Responsive grid layouts (md:grid-cols-2, lg:grid-cols-3)
 - **Spacing**: Consistent use of Tailwind's spacing scale (my-6, my-30, p-4, etc.)
@@ -158,7 +155,7 @@ The design has been translated from Figma wireframes into a fully functional Rea
 
 6. **No Cart Functionality**: "Add to Cart" buttons are present but not yet functional. Would need state management for cart operations.
 
-7. **Responsive Breakpoints**:
+7. **Responsive Breakpoints**: 
    - Mobile: Default (< 768px)
    - Tablet: md: (768px - 1024px)
    - Desktop: lg: (1024px+)
@@ -213,7 +210,6 @@ The design has been translated from Figma wireframes into a fully functional Rea
 #### Phase 1: Foundation (High Priority)
 
 1. **Backend Integration**
-
    ```javascript
    // Connect to REST API or GraphQL
    - Create API service layer (src/services/api.js)
@@ -222,7 +218,6 @@ The design has been translated from Figma wireframes into a fully functional Rea
    ```
 
 2. **State Management**
-
    ```javascript
    // Implement Zustand or Redux
    - User authentication state
@@ -256,7 +251,6 @@ The design has been translated from Figma wireframes into a fully functional Rea
    - Wishlist/favorites
 
 4. **Image Optimization**
-
    ```javascript
    // Use image optimization library
    - Next.js Image component (if migrating to Next.js)
@@ -267,7 +261,6 @@ The design has been translated from Figma wireframes into a fully functional Rea
 #### Phase 3: Performance & UX (Lower Priority)
 
 1. **Code Splitting**
-
    ```javascript
    // Implement lazy loading for routes
    const Home = lazy(() => import('./pages/Home'));
@@ -286,7 +279,6 @@ The design has been translated from Figma wireframes into a fully functional Rea
    - Set up E2E testing with Cypress or Playwright
 
 4. **Accessibility Improvements**
-
    ```javascript
    // Add ARIA labels and semantic HTML
    - Review WCAG 2.1 AA compliance
@@ -365,20 +357,17 @@ npm run lint
 ### Common Modifications
 
 **Adding a New Page:**
-
 1. Create component in `src/pages/PageName.jsx`
 2. Import in `App.jsx`
 3. Add route: `<Route path="path-name" element={<PageName />} />`
 4. Update header navigation links if needed
 
 **Updating Product Data:**
-
 - Edit `src/utils/data.js` for home page data
 - Edit `src/utils/exploreData.js` for explore page data
 - Later: Replace with API calls from backend
 
 **Styling:**
-
 - Use Tailwind classes directly in JSX
 - Custom CSS in respective component .css files only if necessary
 - Keep consistent with existing color variables and spacing scale
@@ -409,3 +398,5 @@ npm run lint
 **Last Updated**: February 17, 2026  
 **Maintained By**: Development Team  
 **Next Review**: When major feature additions are made
+
+[Live Demo](https://truemind-seven.vercel.app/)
