@@ -3,30 +3,31 @@ import { useState } from "react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuLinks = [
+    { name: "Home", path: "/" },
+    { name: "Explore", path: "/explore" },
+    { name: "My Orders", path: "/dashboard/myOrders" },
+    { name: "Account", path: "/dashboard/account" },
+  ]
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-lg border-b border-emerald-100/50">
+    <header className="sticky top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-lg border-b border-emerald-100/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo Section */}
           <div className="flex items-center space-x-3">
             <Link to="/" className="flex items-center space-x-3 group">
               <div className="flex">
-                <span className="text-2xl font-bold text-[#2E462E]">
+                <h1 className="text-[#FF7A18] text-4xl island-moments-regular">
                   Chuks Kitchen
-                </span>
+                </h1>
               </div>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            {[
-              { name: "Home", path: "/" },
-              { name: "Explore", path: "/dashboard/explore" },
-              { name: "My Orders", path: "/dashboard/myOrders" },
-              { name: "Account", path: "/dashboard/account" },
-            ].map((item) => (
+            {menuLinks.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
@@ -81,12 +82,7 @@ export default function Header() {
         >
           <div className="py-6 border-t border-emerald-100 space-y-4 bg-white rounded-2xl mt-2">
             <nav className="flex flex-col space-y-4">
-              {[
-                { name: "Home", path: "/" },
-                { name: "Explore", path: "/dashboard/explore" },
-                { name: "My Orders", path: "/dashboard/myOrders" },
-                { name: "Account", path: "/dashboard/account" },
-              ].map((item) => (
+              {menuLinks.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}

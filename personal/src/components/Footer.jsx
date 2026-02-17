@@ -25,7 +25,7 @@ export default function Footer() {
             <ul className="space-y-4">
               {[
                 { name: "Home", path: "/" },
-                { name: "Explore", path: "/dashboard/explore" },
+                { name: "Explore", path: "/explore" },
                 { name: "My Orders", path: "/dashboard/myOrders" },
                 { name: "Account", path: "/dashboard/account" },
                 { name: "Contact", path: "/dashboard/contact" },

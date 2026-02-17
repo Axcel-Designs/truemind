@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from "react-router";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Menu from "./pages/Menu";
+import Explore from "./pages/Explore";
 import Onboarding from "./pages/Onboarding";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
@@ -22,7 +22,7 @@ function App() {
       <div className="grow">
         <Routes>
           <Route index element={<Home />} />
-          <Route path="menu" element={<Menu />} />
+          <Route path="explore" element={<Explore />} />
           <Route path="onboarding" element={<Onboarding />} />
           <Route path="signin" element={<SignIn />} />
           <Route path="signup" element={<SignUp />} />
